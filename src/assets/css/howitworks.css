@@ -1,0 +1,144 @@
+/*
+--------------------
+How It Works CSS
+--------------------
+ */
+
+.sectionStructure {
+    composes: contentBlock from './utils.css';
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionHeader {
+    composes: pageHeaderGray from './utils.css';
+}
+
+.subHeader {
+    composes: subHeaderGray from './utils.css'
+}
+
+.text {
+    composes: textGray from './utils.css';
+    min-height: 8vw;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    margin: 2vw;
+}
+
+.slider {
+    background: linear-gradient(90deg, #574BCD 15%, #2999AD, #35C092, #41E975);
+    border-style: solid;
+    margin: auto;
+    border-color: #4A4A4A;
+    border-width: 0.3vw;
+    border-radius: 0.2em;
+    display: flex;
+    padding: 0;
+    font-family: Avenir Next, sans-serif;
+    font-size: 3vw;
+}
+
+.sliderButton {
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 0.1em;
+    color: #4A4A4A;
+}
+
+.rentButton {
+    border-radius: 0.1em 0 0 0.1em;
+    border-right-style: none;
+    border-right-width: 0.3vw;
+}
+
+.sellButton {
+    border-radius: 0 0.1em 0.1em 0;
+    border-left-style: solid;
+    border-left-width: 0.3vw;
+}
+
+.active {
+    color: #ffffff;
+    border-color: #4A4A4A;
+    background-color: transparent;
+    /*border-style: solid;*/
+}
+
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 0.1em;
+    color: #4A4A4A;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 30vw;
+    padding: 1vw;
+    min-height: 23vw;
+}
+
+.box#boxOne {
+    justify-self: right;
+}
+
+.box#boxThree {
+    justify-self: right;
+}
+
+.box#boxFive {
+    justify-self: right;
+}
+
+.box#boxSeven {
+    justify-self: right;
+}
+
+.chartIcon {
+    max-width: 15vw;
+    height: auto;
+    justify-self: flex-start;
+    margin-bottom: 1vw;
+}
+
+.cartIcon {
+    composes: chartIcon;
+    max-height: 9vw;
+    width: auto;
+}
+
+.formIcon {
+    composes: chartIcon;
+    max-height: 9vw;
+    width: auto;
+}
+
+.quoteIcon {
+    composes: chartIcon;
+    max-width: 10vw;
+}
+
+.searchIcon {
+    composes: chartIcon;
+    max-width: 7vw;
+    margin-bottom: 2vw;
+}
+
+.moneyIcon {
+    composes: chartIcon;
+    max-width: 11vw;
+}
+
+.hidden {
+    display: none
+}
+

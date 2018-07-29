@@ -1,0 +1,186 @@
+/*
+--------------------
+Structure
+--------------------
+ */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 5vw;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contentBlock {
+    margin: 1vw;
+    padding: 1vw;
+}
+
+
+
+
+/*
+--------------------
+Text
+--------------------
+ */
+
+.textGray {
+    font-family: Avenir Next, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    margin: 0;
+    color: #4A4A4A;
+}
+
+.textWhite {
+    composes: textGray;
+    color: #ffffff
+}
+
+
+
+
+/*
+--------------------
+Headers
+--------------------
+ */
+
+.pageHeaderWhite {
+    color: #ffffff;
+    text-align: center;
+    font-family: "DIN Alternate", sans-serif;
+    font-weight: bold;
+    font-size: 4.5vw;
+    margin: 0 0 1vw 0;
+}
+
+.pageHeaderGray {
+    composes: pageHeaderWhite;
+    color: #4A4A4A;
+}
+
+.subHeaderWhite {
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: normal;
+    font-family: "Avenir Next", sans-serif;
+    margin: 0;
+}
+
+.subHeaderGray {
+    composes: subHeaderWhite;
+    color: #4A4A4A;
+}
+
+
+
+
+/*
+--------------------
+Buttons
+--------------------
+*/
+
+.button {
+    border-style: solid;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    border-radius: 0.2em;
+    border-width: 0.1em;
+    border-color: #ffffff;
+    text-decoration: none;
+    font-family: Avenir Next, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    width: 20vw;
+    color: #ffffff;
+    margin: auto;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #5155C9;
+    background-color: #ffffff;
+}
+
+.purple-button {
+    background-color: #5155C9;
+    font-family: "DIN Alternate", sans-serif;
+    font-size: 1.5vw;
+    color: #ffffff;
+    border-radius: 0.4vw;
+    border-style: solid;
+    border-color: #5155C9;
+    padding: 0.5vw;
+    cursor: pointer;
+    letter-spacing: 0.01vw;
+    width: 10vw;
+    text-align: center;
+}
+
+
+
+
+/*
+--------------------
+Line inputs
+--------------------
+ */
+
+.inputBox {
+    background: #ffffff;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 3vw;
+    color: #4A4A4A;
+    font-weight: lighter;
+    border-radius: 0.6vw;
+    border-style: hidden;
+    text-align: center;
+}
+
+.line-input {
+    border-style: none none solid none;
+    border-width: 0.1vw;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2vw;
+    width: 40vw;
+    margin: 1vw;
+    border-color: #4A4A4A;
+    color: #4A4A4A;
+}
+
+.line-input:focus {
+    outline-style: none;
+}
+
+.line-input-invalid {
+    border-color: #FF3B30;
+}
+
+.line-input.line-input-invalid::-webkit-input-placeholder {
+    color: red;
+}
+
+/*
+--------------------
+Auxiliary
+--------------------
+ */
+
+.label {
+    display: none;
+}
+
+

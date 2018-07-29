@@ -1,0 +1,37 @@
+/*
+-------------------------
+What's Alexandria
+-------------------------
+ */
+
+.sectionStructure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sectionHeader {
+    composes: pageHeaderGray from './utils.css';
+    text-align: left;
+}
+
+.subHeader {
+    composes: subHeaderGray from './utils.css';
+}
+
+.contentBlock {
+    composes: contentBlock from './utils.css';
+}
+
+.textBlock {
+    margin-bottom: 2vw;
+}
+
+.text {
+    composes: textGray from './utils.css'
+}
+
+.bookImg {
+    max-width: 40vw;
+    margin: auto;
+}
+

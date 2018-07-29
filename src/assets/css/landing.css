@@ -1,0 +1,40 @@
+/*
+------------------------
+Header Content
+------------------------
+*/
+
+.headline {
+    margin: 0 0 1vw 0;
+    padding-top: 0.4em;
+    font-size: 10vw;
+    text-align: center;
+    font-family: "DIN Alternate", sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    flex-direction: column;
+}
+
+.flexContainer {
+    composes: flex-container from './utils.css';
+}
+
+.buttonRental {
+    composes: button from './utils.css';
+    margin-right: 10vw;
+}
+
+.buttonSell {
+    composes: button from './utils.css';
+    margin-left: 10vw;
+}
+
+
+
+
+

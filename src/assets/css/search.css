@@ -1,0 +1,143 @@
+/*
+-------------------------
+Search Alexandria CSS
+-------------------------
+ */
+
+.sectionStructure {
+    background: linear-gradient(130deg, #574BCD 15%, #2999AD, #35C092, #41E975);
+    display: flex;
+    flex-direction: column;
+    min-height: 30vw;
+}
+
+.sectionHeader {
+    composes: pageHeaderWhite from './utils.css';
+}
+
+.contentBlock {
+    composes: contentBlock from './utils.css';
+    margin-top: 3vw;
+}
+
+.search {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexItem {
+    flex-grow: 1;
+    width: 60vw;
+    text-align: center;
+    margin: 1vw;
+}
+
+/* Search Box */
+.searchBox {
+    composes: flexItem;
+    border-radius: 0 0.2em 0.2em 0;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.searchFilterButton {
+    border-radius: 0.2em 0 0 0.2em;
+    margin-right: 0;
+    border: none;
+    background-color: #4A4A4A;
+    color: #ffffff;
+    font-family: "DIN Alternate", sans-serif;
+    font-size: 2vw;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.searchInput {
+    width: 100%;
+    border-radius: 0 0.2em 0.2em 0;
+    position: relative;
+    composes: inputBox from './utils.css';
+    border-style: hidden;
+    text-align: center;
+}
+
+.searchInput:focus {
+}
+
+/* Search Button */
+.buttonContainer {
+    composes: flexItem;
+}
+
+.searchButton {
+    composes: button from './utils.css';
+    padding: 0 4vw;
+}
+
+/*
+-------------------------
+Dropdown Selector CSS
+-------------------------
+*/
+
+
+.dropdownContainer {
+    position: absolute;
+    /*display: none;*/
+    width: 8vw;
+    left: 0;
+    background-color: #ffffff;
+    padding: 0 1vw;
+    border-radius: 0.8em;
+    border-style: solid;
+    border-color: #4A4A4A;
+    z-index: 1;
+}
+.dropdownList {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdownItem {
+    list-style-type: none;
+    padding: 1vw 0;
+    border-top-style: solid;
+    border-color: #4A4A4A;
+    border-width: 0.1vw;
+}
+
+.dropdownItemTop {
+    composes: dropdownItem;
+    border: none;
+}
+
+.dropdownButton {
+    composes: textGray from './utils.css';
+    font-size: 2vw;
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+}
+
+.dropdownButton:hover {
+    font-weight: normal;
+}
+
+/*
+-------------------------
+Auxiliary CSS
+-------------------------
+*/
+
+.label {
+    composes: label from './utils.css'
+}
+
+.hidden {
+    display: none;
+}
+
+

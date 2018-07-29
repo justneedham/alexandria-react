@@ -1,0 +1,46 @@
+/*
+--------------------
+Textbooks Made Simple CSS
+--------------------
+ */
+
+.sectionStructure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(50deg, #574BCD 15%, #2999AD, #35C092, #41E975);
+}
+
+.sectionHeader {
+    composes: pageHeaderWhite from './utils.css';
+    text-align: left;
+}
+
+.subHeader {
+    composes: subHeaderWhite from './utils.css';
+}
+
+.contentBlock {
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.textBlock {
+    margin-bottom: 2vw;
+}
+
+.text {
+    composes: textWhite from './utils.css';
+}
+
+.logoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6vw auto auto auto;
+}
+
+.logo {
+    max-width: 10vw;
+    height: auto;
+    padding: 2vw;
+}
+

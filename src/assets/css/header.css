@@ -1,0 +1,48 @@
+.main {
+    grid-area: header;
+    height: 40vw;
+}
+
+/*****Header Background *****/
+
+.gradient {
+    background: linear-gradient(130deg, #574BCD 15%, #2999AD, #35C092, #41E975);
+    min-height: 39vw;
+
+}
+
+.graphic {
+    background-image: url("../elements/small_white_a.png");
+    background-size: 150vw;
+    background-position-y: -16vw;
+    opacity: 0.1;
+
+}
+
+.graphicBackground {
+    min-height: 39vw;
+
+}
+
+/*****Header******/
+
+.wrapper {
+    top: -40vw;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.logo {
+    max-width: 30vw;
+    margin: 1.5vw 0 0 2vw;
+}
+
+.nav_icon {
+    padding: 2vw;
+    width: 4vw;
+}

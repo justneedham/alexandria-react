@@ -1,0 +1,89 @@
+/*
+**********************************************
+Footer CSS
+**********************************************
+ */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+}
+
+.footerItem {
+    flex: 1 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/****Colored Logo******/
+
+.logoContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logoImg {
+    max-width: 20vw;
+    margin: 2vw auto;
+}
+
+.copyright {
+    font-family: "Avenir Next", sans-serif;
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: #4A4A4A;
+}
+
+/****Links*****/
+
+.linksContainer {
+    flex: 2 20vw;
+}
+
+.columnContainer {
+    flex: 1 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.column {
+    composes: column from './utils.css';
+}
+
+.columnHeader {
+    text-align: left;
+    font-family: Avenir Next, sans-serif;
+    font-weight: normal;
+    font-size: 1.5vw;
+    color: #4A4A4A;
+    margin: 2vw 0 0 5vw;
+
+}
+
+.columnItem {
+    display: inline-block;
+    text-align: left;
+    font-family: "Lucida Grande", sans-serif;
+    color: #9B9B9B;
+    font-size: 1vw;
+    margin-top: 0.1vw;
+    text-decoration: none;
+}
+
+.columnItem a {
+    text-decoration: none;
+    color: #9B9B9B;
+}
+
+/****Social Media*****/
+
+.socialMediaContainer {
+    flex: 1 10vw;
+}
+.socialMediaImg {
+    max-width: 4.5vw;
+    margin: 2vw auto auto auto;
+}
